@@ -40,7 +40,6 @@ dependencies:
   flutter_sound: ^9.2.13
   provider: ^6.1.1
   http: ^1.2.0
-  audioplayers: ^5.2.1
   path_provider: ^2.1.2
 
 dev_dependencies:
