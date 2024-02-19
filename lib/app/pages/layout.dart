@@ -28,7 +28,45 @@ class _LayoutState extends State<Layout> {
                     child: Image.asset(
                       'assets/images/logo.png',
                     ),
-                  )
+                  ),
+                  const SizedBox(height: 40),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    child: SizedBox(
+                      child: Container(
+                        height: 50,
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 61, 61, 61),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: const Center(
+                          child: Text(
+                            "Chat",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const Expanded(child: SizedBox()),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Text(
+                          "Novo chat",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),

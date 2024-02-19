@@ -75,19 +75,19 @@ class ChatController extends ChangeNotifier {
     return completer.future;
   }
 
-  Future<void> playAudio() async {
-    FlutterSoundPlayer _player = FlutterSoundPlayer();
-    final audioBytes = await blobToUint8List(audioData);
+  // Future<void> playAudio() async {
+  //   FlutterSoundPlayer _player = FlutterSoundPlayer();
+  //   final audioBytes = await blobToUint8List(audioData);
 
-    _player.openPlayer();
+  //   _player.openPlayer();
 
-    _player.startPlayer(
-      fromDataBuffer: audioBytes,
-      whenFinished: () {
-        _player.stopPlayer();
-      },
-    );
-  }
+  //   _player.startPlayer(
+  //     fromDataBuffer: audioBytes,
+  //     whenFinished: () {
+  //       _player.stopPlayer();
+  //     },
+  //   );
+  // }
 
   Future<void> sendAudio() async {
     try {
